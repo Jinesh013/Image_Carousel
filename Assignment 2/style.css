@@ -1,0 +1,37 @@
+.container {
+    display: grid;
+    place-items: center;
+    width: 80%; /* adjust the width to your liking */
+    margin: 40px auto; /* add some margin top and bottom, and set margin left and right to auto */
+  }
+
+table {
+    text-align: left;
+    position: relative;
+    border-collapse: collapse; 
+    background-color: #f6f6f6;
+  }/* Spacing */
+  td, th {
+    border: 1px solid #999;
+    padding: 20px;
+  }
+  th {
+    background: rgb(58, 37, 218);
+    color: white;
+    border-radius: 0;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+  .primary{
+    background-color: #000000
+  }
+  
+  tfoot > tr  {
+    background: black;
+    color: white;
+  }
+  tbody > tr:hover {
+    color: white;
+    background-color: #3bcc55;
+  }
