@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+.styled-div-left {
+    background-color: #4CAF50; /* Initial background color */
+    border: 3px solid #2E7D32; /* Border color and thickness */
+    padding: 20px; /* Inner space */
+    margin: 30px; /* Outer space */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.styled-div-middle {
+    background-color: #4cafaf; /* Initial background color */
+    border: 3px solid #2e617d; /* Border color and thickness */
+    padding: 20px; /* Inner space */
+    margin: 30px; /* Outer space */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.styled-div-right {
+    background-color: #af904c; /* Initial background color */
+    border: 3px solid #78691e; /* Border color and thickness */
+    padding: 20px; /* Inner space */
+    margin: 30px; /* Outer space */
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.styled-div-left:hover {
+    background-color: #81C784; /* Background color on hover */
+}
+.styled-div-middle:hover {
+    background-color: #45dfea; /* Background color on hover */
+}
+.styled-div-right:hover {
+    background-color: #becc6f; /* Background color on hover */
+}
