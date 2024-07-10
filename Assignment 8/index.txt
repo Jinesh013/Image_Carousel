@@ -1,3 +1,83 @@
-1
-2
-3
+1. Stage all the changes and commit them with a meaningful commit message
+
+git add .
+git commit -m "Your meaningful commit message"
+
+
+2. Move committed changes to the correct branch
+
+# Assuming you're on the wrong branch
+# Create a new branch from the current state
+git branch temp-branch
+
+# Switch back to the original branch where the commit should have gone
+git checkout correct-branch
+
+# Cherry-pick the commit(s) from the wrong branch
+git cherry-pick <commit-hash>
+
+# Delete the temporary branch if no longer needed
+git branch -D temp-branch
+
+
+3. Create a new branch, make changes, and push the branch to the remote repository
+
+# Create a new branch and switch to it
+git checkout -b new-branch
+
+# Make your changes...
+
+# Stage and commit your changes
+git add .
+git commit -m "Your commit message"
+
+# Push the new branch to the remote repository
+git push origin new-branch
+
+
+4. Contribute to an open-source project hosted on GitHub
+
+git clone https://github.com/your-username/repository-name.git
+cd repository-name
+git remote add upstream https://github.com/original-username/repository-name.git
+git checkout -b your-feature-branch
+git add .
+git commit -m "Description of your changes"
+git push origin your-feature-branch
+
+
+5. Resolve merge conflicts
+
+git checkout your-branch
+git pull origin main
+git add <file-with-conflict>
+git commit -m "Resolved merge conflicts"
+
+
+6. Create a feature branch based on the latest changes in the main branch
+
+# Ensure you're on the main branch and up to date
+git checkout main
+git pull origin main
+
+# Create and switch to the new feature branch
+git checkout -b new-feature-branch
+
+
+7. Revert to a specific commit, discarding all changes made after that commit
+
+# Use reset to go back to a specific commit and discard changes
+git reset --hard <commit-hash>
+
+# Force push to update the remote repository
+git push --force
+
+
+8. Restore a deleted file from the previous commit
+
+# Checkout the file from the previous commit
+git checkout HEAD^ -- path/to/deleted-file
+
+# Stage and commit the restored file
+git add path/to/deleted-file
+git commit -m "Restore deleted file"
