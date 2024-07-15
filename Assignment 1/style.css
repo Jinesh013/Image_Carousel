@@ -1,0 +1,63 @@
+/* Add some basic styling to the form */
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the labels */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Style the input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="number"] {
+    width: 80%;
+    height: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style the buttons */
+  input[type="button"] {
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  input[type="button"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Add some space between the form elements */
+  form > * {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the cancel button */
+  input[type="button"][value="cancle"] {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  input[type="button"][value="cancle"]:hover {
+    background-color: #aaa;
+  }
